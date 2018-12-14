@@ -3,18 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class ObsticleSpawner : MonoBehaviour
+public class Spawner : MonoBehaviour
 {
-    private Transform obsticleContainer;
-    private float spawnTime = 0.3f;
+    private Transform spawnsContainer;
     private float timeToLive = 5f;
     private Transform[] spawnPoints;
 
     public GameObject obsticlePrefab;
-    
+    public float spawnTime = 0.3f;
+
     void Start()
     {
-        obsticleContainer = this.gameObject.transform.Find("Obsticles");
+        spawnsContainer = this.gameObject.transform.Find("Spawns");
 
         var spawnPointContainer = this.gameObject.transform.Find("SpawnPoints");
         spawnPoints = spawnPointContainer.Cast<Transform>().ToArray();
@@ -24,17 +24,10 @@ public class ObsticleSpawner : MonoBehaviour
 
     void Spawn()
     {
-        // If the player has no health left...
-        //if(playerHealth.currentHealth <= 0f)
-        //{
-        //    // ... exit the function.
-        //    return;
-        //}
-
         int spawnPointIndex = Random.Range(0, spawnPoints.Length);
 
         var obsticle = Instantiate(obsticlePrefab, spawnPoints[spawnPointIndex].position, spawnPoints[spawnPointIndex].rotation);
-        obsticle.transform.parent = obsticleContainer;
+        obsticle.transform.parent = spawnsContainer;
 
         Destroy(obsticle, timeToLive);
     }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
-public class Obsticle : MonoBehaviour
+public class SpawnMover : MonoBehaviour
 {
     public float movementSpeed = 10f;
     private Rigidbody2D rigidBody;
