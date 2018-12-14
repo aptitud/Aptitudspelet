@@ -5,13 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class CollisionDetector : MonoBehaviour
 {
-    private Renderer renderer;
+    private Renderer playerRenderer;
     private IEnumerable<Renderer> childRenderers;
 
 
     void Start()
     {
-        renderer = GetComponent<Renderer>();
+        playerRenderer = GetComponent<Renderer>();
         childRenderers = GetComponentsInChildren<Renderer>(true);
     }
 
@@ -19,7 +19,7 @@ public class CollisionDetector : MonoBehaviour
     {
         if (collision.gameObject.tag == "Obsticle")
         {
-            renderer.enabled = false;
+            playerRenderer.enabled = false;
             foreach (var childRenderer in childRenderers)
             {
                 childRenderer.enabled = false;

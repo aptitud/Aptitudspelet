@@ -7,7 +7,6 @@ public static class GameManager
 {
     public static void StartNewGame()
     {
-        Debug.Log("Starting new game");
         Scene scene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(scene.name);
     }
