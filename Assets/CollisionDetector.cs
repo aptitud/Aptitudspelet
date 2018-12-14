@@ -31,13 +31,14 @@ public class CollisionDetector : MonoBehaviour
         else if (collision.gameObject.tag == "Logo")
         {
             Destroy(collision.gameObject);
-            Debug.Log("YAYAYYAYYAYA");
+            ScoreKeeper.IncrementScore();
         }
     }
 
     IEnumerator Restart()
     {
         yield return new WaitForSeconds(1);
+        ScoreKeeper.End();
         GameManager.StartNewGame();
     }
 }
