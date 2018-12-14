@@ -492,7 +492,7 @@ Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 235549568}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -516,6 +516,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a235c0cf159406a4ebea4422800e0deb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movementSpeed: 10
 --- !u!4 &251376846 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4154979378376972, guid: a26608ebe44c42442aaa8fd6eeaf321c,
