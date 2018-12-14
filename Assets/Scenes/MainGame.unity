@@ -401,6 +401,7 @@ GameObject:
   m_Component:
   - component: {fileID: 235549570}
   - component: {fileID: 235549569}
+  - component: {fileID: 235549571}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -461,12 +462,27 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 235549568}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.709041, y: -0.37826657, z: 0}
+  m_LocalPosition: {x: -9.684, y: -0.36, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!70 &235549571
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 235549568}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.055999763, y: -0.01865935}
+  m_Size: {x: 1.4505031, y: 0.9405649}
+  m_Direction: 1
 --- !u!4 &251376846 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4154979378376972, guid: a26608ebe44c42442aaa8fd6eeaf321c,
