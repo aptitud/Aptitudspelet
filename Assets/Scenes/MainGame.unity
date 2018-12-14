@@ -343,8 +343,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obsticlePrefab: {fileID: 1426859629269366, guid: 586f3994de5078740bdb3ba81a81ab2d,
     type: 2}
-  spawnTime: 3
-  spawnPoints: []
 --- !u!4 &148841350
 Transform:
   m_ObjectHideFlags: 0
@@ -435,7 +433,7 @@ GameObject:
   - component: {fileID: 235549572}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
