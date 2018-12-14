@@ -28,6 +28,11 @@ public class CollisionDetector : MonoBehaviour
             StartCoroutine(Restart());
             Destroy(gameObject, 2);
         }
+        else if (collision.gameObject.tag == "Logo")
+        {
+            Destroy(collision.gameObject);
+            Debug.Log("YAYAYYAYYAYA");
+        }
     }
 
     IEnumerator Restart()

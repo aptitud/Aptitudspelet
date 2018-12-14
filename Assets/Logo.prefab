@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212173716902926854}
   - component: {fileID: 50656513106587600}
   - component: {fileID: 114084323070507624}
+  - component: {fileID: 70640914210872526}
   m_Layer: 0
   m_Name: Logo
   m_TagString: Logo
@@ -36,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1333665677849842}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.9339404, y: -0.48406315, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -60,8 +61,23 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!70 &70640914210872526
+CapsuleCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1333665677849842}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.011695921, y: -0.011690858}
+  m_Size: {x: 1.3996514, y: 0.7496668}
+  m_Direction: 1
 --- !u!114 &114084323070507624
 MonoBehaviour:
   m_ObjectHideFlags: 1
