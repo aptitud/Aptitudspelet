@@ -6,6 +6,8 @@ using UnityEngine;
 public class PlayerControls : MonoBehaviour
 {
     public float movementSpeed = 10f;
+    public Joystick joystick;
+
     private Rigidbody2D rigidBody;
     private float movement = 0f;
 
@@ -16,7 +18,11 @@ public class PlayerControls : MonoBehaviour
 
     void Update()
     {
-        movement = Input.GetAxis("Vertical") * movementSpeed;
+        var movementBase = joystick.gameObject.activeSelf
+            ? joystick.Vertical
+            : Input.GetAxis("Vertical");
+
+        movement = movementBase * movementSpeed;
     }
 
     private void FixedUpdate()
